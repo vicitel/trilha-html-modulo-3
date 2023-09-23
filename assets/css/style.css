@@ -3,8 +3,36 @@ body, html {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-ul { list-style: none; padding-left: 5px; }
-a { color:blue; text-decoration: none;}
+ul { list-style: none; padding-left: 5px;
+}
+a { color:blue; text-decoration: none;
+}
+table, th, td {
+    background-color: #f8f9fa;
+    color: #202122;
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+    /*text-align: center;*/
+}
+figure {
+    /*text-align: left;*/
+    border: 1px #cccccc solid;
+    background-color: #f8f9fa;
+    padding: 4px;
+    margin: auto;
+}
+figcaption {
+    border: #c8ccd1;
+    background-color: #f8f9fa;
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: left;
+}
+.box {
+    width: 200px;
+    display: inline-block;
+}
 .bar {
     background-color: #f9f9fb;
     padding:15px;
@@ -33,6 +61,11 @@ a { color:blue; text-decoration: none;}
 .sidebar {
     border-right: solid 1px #cdcdcd;
 }
-figure {
-    text-align: center;
+.skip-link {
+    position: absolute;
+    top: -3em;
+    background: #fff;
+}
+.skip-link:focus {
+    top: 0;
 }
